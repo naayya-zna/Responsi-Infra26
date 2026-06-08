@@ -47,7 +47,7 @@ services:
 
   web3:
     build:
-      context: ./web33
+      context: ./web3
     container_name: web3
     environment:
       DB_HOST: db
@@ -61,7 +61,7 @@ services:
       - backend
 
   db:
-     build:
+    build:
       context: ./db
     container_name: mysql-db
     environment:
